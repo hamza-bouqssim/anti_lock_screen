@@ -9,15 +9,14 @@ int lock(int key, void *walo)
 	if (key == 13)
 		exit(0);
     walo = NULL;
-	system("open ~/Desktop/lock.app");
-	system("open ~/Desktop/lock.app");
+	system("open ./lock.app");
 	return 0;
 }
 
 int	mouse_hook(int x, int y, void *param)
 {
 	param = NULL;
-	system("open ~/Desktop/lock.app");
+	system("open ./lock.app");
 	return 0;
 }
 
