@@ -1,2 +1,2 @@
 all:
-	gcc  -lmlx -framework OpenGL -framework AppKit lock.c
+	gcc  -lmlx -framework OpenGL -framework AppKit lock.c -o nothing
