@@ -24,6 +24,11 @@ int main()
     win_ptr = mlx_new_window(mlx, 0, 0, "joke on me");
     mlx_hook(win_ptr, 2, 0, lock, NULL);
 	mlx_mouse_hook(win_ptr, mouse_hook, NULL);
+	mlx_hook(win_ptr, 1, 0, lock, NULL);
+	mlx_hook(win_ptr, 2, 0, lock, NULL);
+	mlx_hook(win_ptr, 3, 0, lock, NULL);
+	mlx_hook(win_ptr, 4, 0, lock, NULL);
+	mlx_hook(win_ptr, 5, 0, lock, NULL);
 	mlx_hook(win_ptr, 6, 0, mouse_hook, NULL);
     mlx_loop(mlx);
 }
